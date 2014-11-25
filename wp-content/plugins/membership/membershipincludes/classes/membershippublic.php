@@ -770,7 +770,7 @@ if(!class_exists('membershippublic')) {
 
 			// If we are here then we have no custom message, or the shortcode wasn't found so just output the standard message
 			if(isset($M_options['shortcodemessage'])) {
-				return stripslashes($M_options['shortcodemessage']);
+				return stripslashes( do_shortcode($M_options['shortcodemessage']));
 			} else {
 				return '';
 			}
@@ -858,7 +858,7 @@ if(!class_exists('membershippublic')) {
 
 		function posts_actually_exist() {
 
-			$sql = $this->db->prepare( "SELECT count(*) FROM {$this->db->posts} WHERE post_type = 'post' AND post_status = 'publish'" );
+			$sql = $this->db->prepare( "SELECT count(*) FROM {$this->db->posts} WHERE post_type = %s AND post_status = %s", 'post', 'publish' );
 
 			if($this->db->get_var( $sql ) > 0) {
 				return true;
@@ -1540,7 +1540,8 @@ if(!class_exists('membershippublic')) {
 				case 'subscriptionform':	$content = $this->output_subscriptionform();
 											break;
 
-				case 'registeruser':		if(!is_user_logged_in()) {
+				case 'registeruser':
+											if(!is_user_logged_in()) {
 												$content = $this->output_registeruser();
 											} else {
 												$content = $this->output_paymentpage();
@@ -1958,10 +1959,13 @@ if(!class_exists('membershippublic')) {
 								"prefix"				=>	'',
 								"wrapwith"				=>	'',
 								"wrapwithclass"			=>	'',
-								"subscription"			=>	''
+								"subscription"			=>	'',
+								"level"                 =>  1,
 							);
 
 			extract(shortcode_atts($defaults, $atts));
+
+			$level = (int) $level;
 
 			if(empty($subscription)) {
 				return '';
@@ -1983,7 +1987,7 @@ if(!class_exists('membershippublic')) {
 			}
 
 			$sub = new M_Subscription( (int) $subscription );
-			$first = $sub->get_level_at_position(1);
+			$first = $sub->get_level_at_position( $level );
 
 			if(!empty($first)) {
 				$price = $first->level_price;
@@ -2007,7 +2011,6 @@ if(!class_exists('membershippublic')) {
 					}
 				}
 			}
-
 
 			$html .= $price;
 

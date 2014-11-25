@@ -27,7 +27,7 @@ msgstr "Delete Selected"
 msgid "Untrash Selected"
 msgstr "Undelete Selected"
 
-#: wp-includes/media-template.php:414 wp-includes/media-template.php:517
+#: wp-includes/media-template.php:416 wp-includes/media-template.php:519
 msgid "Untrash"
 msgstr "Undelete"
 
@@ -116,43 +116,43 @@ msgstr "Edit previous media item"
 msgid "Edit next media item"
 msgstr "Edit next media item"
 
-#: wp-includes/media-template.php:325
+#: wp-includes/media-template.php:327
 msgid "File name:"
 msgstr "File name:"
 
-#: wp-includes/media-template.php:326
+#: wp-includes/media-template.php:328
 msgid "File type:"
 msgstr "File type:"
 
-#: wp-includes/media-template.php:327
+#: wp-includes/media-template.php:329
 msgid "Uploaded on:"
 msgstr "Uploaded on:"
 
-#: wp-includes/media-template.php:329
+#: wp-includes/media-template.php:331
 msgid "File size:"
 msgstr "File size:"
 
-#: wp-includes/media-template.php:332
+#: wp-includes/media-template.php:334
 msgid "Dimensions:"
 msgstr "Dimensions:"
 
-#: wp-includes/media-template.php:342
+#: wp-includes/media-template.php:344
 msgid "Bitrate:"
 msgstr "Bitrate:"
 
-#: wp-includes/media-template.php:392
+#: wp-includes/media-template.php:394
 msgid "Uploaded By"
 msgstr "Uploaded By"
 
-#: wp-includes/media-template.php:397
+#: wp-includes/media-template.php:399
 msgid "Uploaded To"
 msgstr "Uploaded To"
 
-#: wp-includes/media-template.php:409
+#: wp-includes/media-template.php:411
 msgid "View attachment page"
 msgstr "View attachment page"
 
-#: wp-includes/media-template.php:410
+#: wp-includes/media-template.php:412
 msgid "Edit more details"
 msgstr "Edit more details"
 
@@ -267,19 +267,19 @@ msgstr "<strong>ERROR</strong>: Cookies are blocked or not supported by your bro
 msgid "Add/remove code tag"
 msgstr "Add/remove code tag"
 
-#: wp-includes/media-template.php:966
+#: wp-includes/media-template.php:968
 msgid "Link CSS Class"
 msgstr "Link CSS Class"
 
-#: wp-includes/media-template.php:746
+#: wp-includes/media-template.php:748
 msgid "Show Video List"
 msgstr "Show Video List"
 
-#: wp-includes/media-template.php:863
+#: wp-includes/media-template.php:865
 msgid "Display Settings"
 msgstr "Display Settings"
 
-#: wp-includes/media-template.php:842
+#: wp-includes/media-template.php:844
 msgid "Edit Original"
 msgstr "Edit Original"
 
@@ -304,28 +304,28 @@ msgstr "Split table cell"
 msgid "Suggested image dimensions:"
 msgstr "Suggested image dimensions:"
 
-#: wp-includes/media-template.php:910
+#: wp-includes/media-template.php:912
 msgid "Custom Size"
 msgstr "Custom Size"
 
-#: wp-includes/media-template.php:945
+#: wp-includes/media-template.php:947
 msgid "Advanced Options"
 msgstr "Advanced Options"
 
-#: wp-includes/media-template.php:949
+#: wp-includes/media-template.php:951
 msgid "Image Title Attribute"
 msgstr "Image Title Attribute"
 
-#: wp-includes/media-template.php:953
+#: wp-includes/media-template.php:955
 msgid "Image CSS Class"
 msgstr "Image CSS Class"
 
-#: wp-includes/media-template.php:368 wp-includes/media-template.php:545
+#: wp-includes/media-template.php:370 wp-includes/media-template.php:547
 #: wp-includes/media.php:1458
 msgid "Artist"
 msgstr "Artist"
 
-#: wp-includes/media-template.php:369 wp-includes/media-template.php:546
+#: wp-includes/media-template.php:371 wp-includes/media-template.php:548
 #: wp-includes/media.php:1459
 msgid "Album"
 msgstr "Album"
@@ -421,7 +421,7 @@ msgctxt "TinyMCE"
 msgid "Headings"
 msgstr "Headings"
 
-#: wp-includes/media-template.php:1035 wp-includes/media-template.php:1125
+#: wp-includes/media-template.php:1037 wp-includes/media-template.php:1127
 msgctxt "auto preload"
 msgid "Auto"
 msgstr "Auto"
@@ -434,7 +434,7 @@ msgstr "Move to another area&hellip;"
 msgid "Cropping&hellip;"
 msgstr "Cropping&hellip;"
 
-#: wp-includes/media-template.php:1142
+#: wp-includes/media-template.php:1144
 msgid "Tracks (subtitles, captions, descriptions, chapters, or metadata)"
 msgstr "Tracks (subtitles, captions, descriptions, chapters, or metadata)"
 
@@ -681,7 +681,7 @@ msgctxt "TinyMCE menu"
 msgid "Format"
 msgstr "Format"
 
-#: wp-includes/media-template.php:1023 wp-includes/media-template.php:1106
+#: wp-includes/media-template.php:1025 wp-includes/media-template.php:1108
 msgid "Add alternate sources for maximum HTML5 playback:"
 msgstr "Add alternate sources for maximum HTML5 playback:"
 
@@ -698,16 +698,16 @@ msgstr "An unexpected error occurred. Something may be wrong with WordPress.org 
 msgid "Back"
 msgstr "Back"
 
-#: wp-includes/media-template.php:748
+#: wp-includes/media-template.php:750
 msgid "Show Tracklist"
 msgstr "Show Tracklist"
 
-#: wp-includes/media-template.php:416 wp-includes/media-template.php:519
+#: wp-includes/media-template.php:418 wp-includes/media-template.php:521
 #: wp-includes/media.php:2935
 msgid "Trash"
 msgstr "Bin"
 
-#: wp-includes/media-template.php:736
+#: wp-includes/media-template.php:738
 msgid "Playlist Settings"
 msgstr "Playlist Settings"
 
@@ -728,27 +728,27 @@ msgstr "%s, and %s"
 msgid "%s and %s"
 msgstr "%s and %s"
 
-#: wp-includes/media-template.php:757
+#: wp-includes/media-template.php:759
 msgid "Show Artist Name in Tracklist"
 msgstr "Show Artist Name in Tracklist"
 
-#: wp-includes/media-template.php:765
+#: wp-includes/media-template.php:767
 msgid "Show Images"
 msgstr "Show Images"
 
-#: wp-includes/media-template.php:1036 wp-includes/media-template.php:1126
+#: wp-includes/media-template.php:1038 wp-includes/media-template.php:1128
 msgid "Metadata"
 msgstr "Metadata"
 
-#: wp-includes/media-template.php:1043 wp-includes/media-template.php:1133
+#: wp-includes/media-template.php:1045 wp-includes/media-template.php:1135
 msgid "Autoplay"
 msgstr "Autoplay"
 
-#: wp-includes/media-template.php:1117
+#: wp-includes/media-template.php:1119
 msgid "Poster Image"
 msgstr "Poster Image"
 
-#: wp-includes/media-template.php:1155
+#: wp-includes/media-template.php:1157
 msgid "There are no associated subtitles."
 msgstr "There are no associated subtitles."
 
@@ -1119,7 +1119,7 @@ msgstr "Page break"
 msgid "Paste as text"
 msgstr "Paste as text"
 
-#: wp-includes/media-template.php:843 wp-includes/media.php:2908
+#: wp-includes/media-template.php:845 wp-includes/media.php:2908
 msgid "Replace"
 msgstr "Replace"
 
@@ -1345,23 +1345,23 @@ msgstr "Failed to write request to temporary file."
 msgid "The SSL certificate for the host could not be verified."
 msgstr "The SSL certificate for the host could not be verified."
 
-#: wp-includes/media-template.php:627
+#: wp-includes/media-template.php:629
 msgid "Embed Media Player"
 msgstr "Embed Media Player"
 
-#: wp-includes/media-template.php:337 wp-includes/media-template.php:511
+#: wp-includes/media-template.php:339 wp-includes/media-template.php:513
 msgid "Length:"
 msgstr "Length:"
 
-#: wp-includes/media-template.php:614
+#: wp-includes/media-template.php:616
 msgid "Embed or Link"
 msgstr "Embed or Link"
 
-#: wp-includes/media-template.php:634
+#: wp-includes/media-template.php:636
 msgid "Link to Media File"
 msgstr "Link to Media File"
 
-#: wp-includes/media-template.php:641
+#: wp-includes/media-template.php:643
 msgid "Link to Attachment Page"
 msgstr "Link to Attachment Page"
 
@@ -1563,11 +1563,11 @@ msgstr "Site Address (URL)"
 msgid "Invalid user ID."
 msgstr "Invalid user ID."
 
-#: wp-includes/media-template.php:730
+#: wp-includes/media-template.php:732
 msgid "Random Order"
 msgstr "Random Order"
 
-#: wp-includes/media-template.php:461
+#: wp-includes/media-template.php:463
 msgid "Caption this image&hellip;"
 msgstr "Caption this image&hellip;"
 
@@ -1588,7 +1588,7 @@ msgctxt "Links widget"
 msgid "Random"
 msgstr "Random"
 
-#: wp-includes/media-template.php:1188 wp-includes/media.php:2932
+#: wp-includes/media-template.php:1190 wp-includes/media.php:2932
 msgid "No items found."
 msgstr "No items found."
 
@@ -1604,7 +1604,7 @@ msgstr "Reverse order"
 msgid "Set featured image"
 msgstr "Set featured image"
 
-#: wp-includes/media-template.php:454
+#: wp-includes/media-template.php:456
 msgid "Deselect"
 msgstr "Deselect"
 
@@ -1621,7 +1621,7 @@ msgstr ""
 "You are about to permanently delete this item.\n"
 "  'Cancel' to stop, 'OK' to delete."
 
-#: wp-includes/media-template.php:419 wp-includes/media-template.php:522
+#: wp-includes/media-template.php:421 wp-includes/media-template.php:524
 #: wp-includes/media.php:2945
 msgid "Delete Permanently"
 msgstr "Delete Permanently"
@@ -1704,21 +1704,21 @@ msgstr "Audio"
 msgid "&#8592; Return to library"
 msgstr "&#8592; Return to library"
 
-#: wp-includes/media-template.php:648 wp-includes/media-template.php:823
-#: wp-includes/media-template.php:936
+#: wp-includes/media-template.php:650 wp-includes/media-template.php:825
+#: wp-includes/media-template.php:938
 msgid "Custom URL"
 msgstr "Custom URL"
 
-#: wp-includes/media-template.php:477 wp-includes/media.php:2952
+#: wp-includes/media-template.php:479 wp-includes/media.php:2952
 msgid "Attachment Details"
 msgstr "Attachment Details"
 
-#: wp-includes/media-template.php:383 wp-includes/media-template.php:560
-#: wp-includes/media-template.php:794
+#: wp-includes/media-template.php:385 wp-includes/media-template.php:562
+#: wp-includes/media-template.php:796
 msgid "Alt Text"
 msgstr "Alt Text"
 
-#: wp-includes/media-template.php:716
+#: wp-includes/media-template.php:718
 msgid "Columns"
 msgstr "Columns"
 
@@ -1726,16 +1726,16 @@ msgstr "Columns"
 msgid "Drag and drop to reorder images."
 msgstr "Drag and drop to reorder images."
 
-#: wp-includes/media-template.php:672 wp-includes/media-template.php:896
+#: wp-includes/media-template.php:674 wp-includes/media-template.php:898
 #: wp-includes/media.php:2676
 msgid "Large"
 msgstr "Large"
 
-#: wp-includes/media-template.php:584
+#: wp-includes/media-template.php:586
 msgid "Attachment Display Settings"
 msgstr "Attachment Display Settings"
 
-#: wp-includes/media-template.php:691
+#: wp-includes/media-template.php:693
 msgid "Gallery Settings"
 msgstr "Gallery Settings"
 
@@ -1827,30 +1827,30 @@ msgstr ""
 "\n"
 "Disable these notifications: %3$s"
 
-#: wp-includes/media-template.php:616 wp-includes/media-template.php:694
-#: wp-includes/media-template.php:817 wp-includes/media-template.php:921
+#: wp-includes/media-template.php:618 wp-includes/media-template.php:696
+#: wp-includes/media-template.php:819 wp-includes/media-template.php:923
 msgid "Link To"
 msgstr "Link To"
 
-#: wp-includes/media-template.php:643 wp-includes/media-template.php:704
-#: wp-includes/media-template.php:928
+#: wp-includes/media-template.php:645 wp-includes/media-template.php:706
+#: wp-includes/media-template.php:930
 msgid "Attachment Page"
 msgstr "Attachment Page"
 
-#: wp-includes/media-template.php:636 wp-includes/media-template.php:707
-#: wp-includes/media-template.php:925
+#: wp-includes/media-template.php:638 wp-includes/media-template.php:709
+#: wp-includes/media-template.php:927
 msgid "Media File"
 msgstr "Media File"
 
-#: wp-includes/media-template.php:465
+#: wp-includes/media-template.php:467
 msgid "Describe this video&hellip;"
 msgstr "Describe this video&hellip;"
 
-#: wp-includes/media-template.php:467
+#: wp-includes/media-template.php:469
 msgid "Describe this audio file&hellip;"
 msgstr "Describe this audio file&hellip;"
 
-#: wp-includes/media-template.php:469
+#: wp-includes/media-template.php:471
 msgid "Describe this media file&hellip;"
 msgstr "Describe this media file&hellip;"
 
@@ -1942,7 +1942,7 @@ msgstr "Insert into post"
 msgid "Add to gallery"
 msgstr "Add to gallery"
 
-#: wp-includes/media-template.php:577 wp-includes/script-loader.php:505
+#: wp-includes/media-template.php:579 wp-includes/script-loader.php:505
 msgid "Clear"
 msgstr "Clear"
 
@@ -2028,7 +2028,7 @@ msgstr "Sorry, you are not allowed to edit posts."
 msgid "Sorry, revisions are disabled."
 msgstr "Sorry, revisions are disabled."
 
-#: wp-includes/media-template.php:859
+#: wp-includes/media-template.php:861
 msgid "Alternative Text"
 msgstr "Alternative Text"
 
@@ -2242,10 +2242,10 @@ msgstr "Upload"
 
 #: wp-includes/class-wp-customize-control.php:591
 #: wp-includes/class-wp-customize-widgets.php:726
-#: wp-includes/media-template.php:450 wp-includes/media-template.php:1002
-#: wp-includes/media-template.php:1016 wp-includes/media-template.php:1086
-#: wp-includes/media-template.php:1098 wp-includes/media-template.php:1119
-#: wp-includes/media-template.php:1151 wp-includes/media.php:2909
+#: wp-includes/media-template.php:452 wp-includes/media-template.php:1004
+#: wp-includes/media-template.php:1018 wp-includes/media-template.php:1088
+#: wp-includes/media-template.php:1100 wp-includes/media-template.php:1121
+#: wp-includes/media-template.php:1153 wp-includes/media.php:2909
 msgid "Remove"
 msgstr "Remove"
 
@@ -2351,7 +2351,7 @@ msgid_plural "Your theme supports %s menus. Select which menu appears in each lo
 msgstr[0] "Your theme supports %s menu. Select which menu you would like to use."
 msgstr[1] "Your theme supports %s menus. Select which menu appears in each location."
 
-#: wp-includes/media-template.php:506
+#: wp-includes/media-template.php:508
 msgid "Refresh"
 msgstr "Refresh"
 
@@ -2748,8 +2748,8 @@ msgid "Log In"
 msgstr "Log In"
 
 #: wp-includes/class-wp-editor.php:811 wp-includes/class-wp-editor.php:1388
-#: wp-includes/media-template.php:363 wp-includes/media-template.php:540
-#: wp-includes/media-template.php:771 wp-includes/revision.php:29
+#: wp-includes/media-template.php:365 wp-includes/media-template.php:542
+#: wp-includes/media-template.php:773 wp-includes/revision.php:29
 msgid "Title"
 msgstr "Title"
 
@@ -3008,7 +3008,7 @@ msgstr "Pingback:"
 msgid "Poster"
 msgstr "Poster"
 
-#: wp-includes/media-template.php:1033 wp-includes/media-template.php:1123
+#: wp-includes/media-template.php:1035 wp-includes/media-template.php:1125
 msgid "Preload"
 msgstr "Preload"
 
@@ -3105,7 +3105,7 @@ msgstr "Invalid post format"
 msgid "Whois  : http://whois.arin.net/rest/ip/%s"
 msgstr "Whois: http://whois.arin.net/rest/ip/%s"
 
-#: wp-includes/class-wp-editor.php:1391 wp-includes/media-template.php:959
+#: wp-includes/class-wp-editor.php:1391 wp-includes/media-template.php:961
 msgid "Open link in a new window/tab"
 msgstr "Open link in a new window/tab"
 
@@ -5082,11 +5082,11 @@ msgstr "List"
 msgid "Constrain proportions"
 msgstr "Constrain proportions"
 
-#: wp-includes/media-template.php:1048 wp-includes/media-template.php:1138
+#: wp-includes/media-template.php:1050 wp-includes/media-template.php:1140
 msgid "Loop"
 msgstr "Loop"
 
-#: wp-includes/media-template.php:799 wp-includes/media-template.php:865
+#: wp-includes/media-template.php:801 wp-includes/media-template.php:867
 msgid "Align"
 msgstr "Align"
 
@@ -5114,7 +5114,7 @@ msgstr "Edit Gallery"
 msgid "Source"
 msgstr "Source"
 
-#: wp-includes/media-template.php:962
+#: wp-includes/media-template.php:964
 msgid "Link Rel"
 msgstr "Link Rel"
 
@@ -6018,7 +6018,7 @@ msgstr "User registration has been disabled."
 msgid "Help"
 msgstr "Help"
 
-#: wp-includes/class-wp-editor.php:903 wp-includes/media-template.php:916
+#: wp-includes/class-wp-editor.php:903 wp-includes/media-template.php:918
 msgid "Width"
 msgstr "Width"
 
@@ -6071,7 +6071,7 @@ msgstr "Date Format"
 msgid "Time Format"
 msgstr "Time Format"
 
-#: wp-includes/class-wp-editor.php:902 wp-includes/media-template.php:916
+#: wp-includes/class-wp-editor.php:902 wp-includes/media-template.php:918
 msgid "Height"
 msgstr "Height"
 
@@ -6372,8 +6372,8 @@ msgstr "Leave a Reply to %s"
 msgid "Author"
 msgstr "Author"
 
-#: wp-includes/class-wp-editor.php:1385 wp-includes/media-template.php:358
-#: wp-includes/media-template.php:535 wp-includes/media.php:2902
+#: wp-includes/class-wp-editor.php:1385 wp-includes/media-template.php:360
+#: wp-includes/media-template.php:537 wp-includes/media.php:2902
 msgid "URL"
 msgstr "URL"
 
@@ -6387,7 +6387,7 @@ msgid "Are you sure you want to do this?"
 msgstr "Are you sure you want to do this?"
 
 #: wp-includes/comment-template.php:1774 wp-includes/comment-template.php:1860
-#: wp-includes/media-template.php:574
+#: wp-includes/media-template.php:576
 msgid "Edit"
 msgstr "Edit"
 
@@ -6463,16 +6463,16 @@ msgstr "Categories"
 msgid "Advanced"
 msgstr "Advanced"
 
-#: wp-includes/class-wp-editor.php:814 wp-includes/media-template.php:388
-#: wp-includes/media-template.php:565
+#: wp-includes/class-wp-editor.php:814 wp-includes/media-template.php:390
+#: wp-includes/media-template.php:567
 msgid "Description"
 msgstr "Description"
 
-#: wp-includes/deprecated.php:707 wp-includes/media-template.php:605
-#: wp-includes/media-template.php:651 wp-includes/media-template.php:710
-#: wp-includes/media-template.php:811 wp-includes/media-template.php:826
-#: wp-includes/media-template.php:877 wp-includes/media-template.php:939
-#: wp-includes/media-template.php:1037 wp-includes/media-template.php:1127
+#: wp-includes/deprecated.php:707 wp-includes/media-template.php:607
+#: wp-includes/media-template.php:653 wp-includes/media-template.php:712
+#: wp-includes/media-template.php:813 wp-includes/media-template.php:828
+#: wp-includes/media-template.php:879 wp-includes/media-template.php:941
+#: wp-includes/media-template.php:1039 wp-includes/media-template.php:1129
 #: wp-includes/script-loader.php:315
 msgid "None"
 msgstr "None"
@@ -6603,7 +6603,7 @@ msgstr "Password"
 msgid "Redo"
 msgstr "Redo"
 
-#: wp-includes/media-template.php:670 wp-includes/media-template.php:894
+#: wp-includes/media-template.php:672 wp-includes/media-template.php:896
 #: wp-includes/media.php:2674
 msgid "Thumbnail"
 msgstr "Thumbnail"
@@ -6624,59 +6624,59 @@ msgstr "File &#8220;%s&#8221; is not an image."
 msgid "Add Media"
 msgstr "Add Media"
 
-#: wp-includes/class-wp-editor.php:1253 wp-includes/media-template.php:322
-#: wp-includes/media-template.php:481
+#: wp-includes/class-wp-editor.php:1253 wp-includes/media-template.php:324
+#: wp-includes/media-template.php:483
 msgid "Saved."
 msgstr "Saved."
 
 #: wp-includes/class-wp-customize-manager.php:1070
-#: wp-includes/class-wp-editor.php:906 wp-includes/media-template.php:596
-#: wp-includes/media-template.php:802 wp-includes/media-template.php:868
+#: wp-includes/class-wp-editor.php:906 wp-includes/media-template.php:598
+#: wp-includes/media-template.php:804 wp-includes/media-template.php:870
 msgid "Left"
 msgstr "Left"
 
 #: wp-includes/class-wp-customize-manager.php:1071
-#: wp-includes/class-wp-editor.php:907 wp-includes/media-template.php:599
-#: wp-includes/media-template.php:805 wp-includes/media-template.php:871
+#: wp-includes/class-wp-editor.php:907 wp-includes/media-template.php:601
+#: wp-includes/media-template.php:807 wp-includes/media-template.php:873
 msgid "Center"
 msgstr "Centre"
 
 #: wp-includes/class-wp-customize-manager.php:1072
-#: wp-includes/class-wp-editor.php:908 wp-includes/media-template.php:602
-#: wp-includes/media-template.php:808 wp-includes/media-template.php:874
+#: wp-includes/class-wp-editor.php:908 wp-includes/media-template.php:604
+#: wp-includes/media-template.php:810 wp-includes/media-template.php:876
 msgid "Right"
 msgstr "Right"
 
-#: wp-includes/media-template.php:671 wp-includes/media-template.php:895
+#: wp-includes/media-template.php:673 wp-includes/media-template.php:897
 #: wp-includes/media.php:2675
 msgid "Medium"
 msgstr "Medium"
 
-#: wp-includes/media-template.php:673 wp-includes/media-template.php:897
+#: wp-includes/media-template.php:675 wp-includes/media-template.php:899
 #: wp-includes/media.php:2677
 msgid "Full Size"
 msgstr "Full Size"
 
-#: wp-includes/media-template.php:661 wp-includes/media-template.php:885
+#: wp-includes/media-template.php:663 wp-includes/media-template.php:887
 msgid "Size"
 msgstr "Size"
 
-#: wp-includes/class-wp-editor.php:905 wp-includes/media-template.php:588
+#: wp-includes/class-wp-editor.php:905 wp-includes/media-template.php:590
 msgid "Alignment"
 msgstr "Alignment"
 
-#: wp-includes/class-wp-editor.php:904 wp-includes/media-template.php:378
-#: wp-includes/media-template.php:555 wp-includes/media-template.php:788
-#: wp-includes/media-template.php:853
+#: wp-includes/class-wp-editor.php:904 wp-includes/media-template.php:380
+#: wp-includes/media-template.php:557 wp-includes/media-template.php:790
+#: wp-includes/media-template.php:855
 msgid "Caption"
 msgstr "Caption"
 
-#: wp-includes/media-template.php:314 wp-includes/media-template.php:505
+#: wp-includes/media-template.php:316 wp-includes/media-template.php:507
 #: wp-includes/media.php:2975
 msgid "Edit Image"
 msgstr "Edit Image"
 
-#: wp-includes/media-template.php:820 wp-includes/media-template.php:932
+#: wp-includes/media-template.php:822 wp-includes/media-template.php:934
 msgid "Image URL"
 msgstr "Image URL"
 
