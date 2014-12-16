@@ -36,30 +36,49 @@ Description: A two-column, fixed-width template with light color blend.
 	<div id="topmenu">
 		<ul>
 			<li class="first"><a href="index.php">Homepage</a></li>
+			<li><a href="aboutus.php">About Us</a></li>
 			<?php
-				if($_SESSION['login'] == NULL)
+				if($_SESSION['login'] != true)
 				{
 					?>
 					<li><a href="register.php">Register</a></li>
+					<li><a href="login.php">Login</a></li>
 		<?
+				}
+				else
+				{
+					?>
+					<li><a href="account.php">My Info</a></li>
+					<li><a href="logout.php">Logout</a></li>
+					<?
 				}
 
 			?>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">Sitemap</a></li>
+			
+			
+			
 		</ul>
 	</div>
 </div>
 <div id="header2">
+
 	<div id="menu">
 		<ul>
-			<li class="first"><a href="#">Home</a></li>
-			<li><a href="#">Products</a></li>
+		<?php
+if( $_SESSION['login'] != NULL)
+{
+?>
+			<li class="first"><a href="findchef.php">I Need Chef</a></li>
+			<li><a href="leaderboard.php">Leaderboard</a></li>
 			<li><a href="#">Support</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Contact</a></li>
+			<?
+}
+?>
 		</ul>
 	</div>
+
 	<div id="splash"><a href="#"><img src="images/img04.jpg" alt="" width="560" height="200" /></a></div>
 </div>
 <hr />
