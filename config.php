@@ -9,7 +9,7 @@
 	ini_set("display_errors", 1);	//throw new
 
 	try{
-	$connect = new PDO("mysql:host=localhost;dbname=comp5112;charset=utf8;","comp5112","comp5112");
+	$connect = new PDO("mysql:host=localhost;dbname=comp5122;charset=utf8;","comp5122","comp5122");
 
 	}
 	catch (Exception $e)

@@ -28,13 +28,13 @@ Description: A two-column, fixed-width template with light color blend.
 <body>
 <div id="testhere">
 <?php
-	$sql="select * from wp_users";
+	$sql="select * from test";
 	$query= $connect->prepare($sql);
 	$query->execute();
 
 	while($result=$query->fetch())
 	{
-		echo $result['user_login']."<BR>";
+		echo $result['name']." - " . $result['value']."<BR>";
 
 	}
 
