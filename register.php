@@ -1,55 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
+<?php
+	include_once("header.php");
 
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-
-Title      : Transition
-Version    : 1.0
-Released   : 20070703
-Description: A two-column, fixed-width template with light color blend.
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Transition by Free Css Templates</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="default.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<div id="header">
-	<div id="logo">
-		<h1><a href="#">Transition</a></h1>
-		<h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>
-	</div>
-	<div id="topmenu">
-		<ul>
-			<li class="first"><a href="#">Homepage</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">Sitemap</a></li>
-		</ul>
-	</div>
-</div>
-<div id="header2">
-	<div id="menu">
-		<ul>
-			<li class="first"><a href="#">Home</a></li>
-			<li><a href="#">Products</a></li>
-			<li><a href="#">Support</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</div>
-	<div id="splash"><a href="#"><img src="images/img04.jpg" alt="" width="560" height="200" /></a></div>
-</div>
-<hr />
+?>
 <div id="page">
 	<div id="content">
 		<div>
-			<h1 class="title">Welcome to Our Website!</h1>
+			<h1 class="title">Register</h1>
 			<div class="content">
 				<p><img src="images/x.jpg" alt="" width="118" height="118" class="left" /></p>
 				<p><strong>Transition</strong> is a free template from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> released under a <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5 License</a>. The  photo is from <a href="http://www.pdphoto.org/">PDPhoto.org</a>. You"re free to use it for both commercial or personal use. I only ask that you link back to <a href="http://www.freecsstemplates.org/">my site</a> in some way. <em>Enjoy :)</em></p>
@@ -123,13 +79,8 @@ Description: A two-column, fixed-width template with light color blend.
 	</div>
 	<div style="clear: both;">&nbsp;</div>
 </div>
-<hr />
-<div id="footer-wrapper">
-	<div id="footer">
-		<p id="legal">Copyright &copy; 2007 Transition. All Rights Reserved<br />
-			Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
-		<p id="links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | <a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS"><abbr title="Cascading Style Sheets">CSS</abbr></a></p>
-	</div>
-</div>
-<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
-</html>
+<?php
+
+include_once("footer.php");
+
+?>

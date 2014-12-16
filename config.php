@@ -7,7 +7,7 @@
 	session_start();
 
 	ini_set("display_errors", 1);	//throw new
-
+/*
 	try{
 #	$connect = new PDO("mysql:host=localhost;dbname=comp5122;charset=utf8;","comp5122","comp5122");
 	$connect = new mysqli("localhost", "comp5122", "comp5122", "comp5122");
@@ -16,7 +16,7 @@
 	{
 		exit("Database error");
 	}
-
+*/
 
 
 ?>
