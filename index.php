@@ -20,37 +20,30 @@ Description: A two-column, fixed-width template with light color blend.
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Transition by Free Css Templates</title>
+<title>Cook at your Home !</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="default.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="testhere">
-<?php
-	$sql="select * from test";
-	$query= $connect->prepare($sql);
-	$query->execute();
 
-	while($result=$query->fetch())
-	{
-		echo $result['name']." - " . $result['value']."<BR>";
-
-	}
-
-?>
-
-
-</div>
 
 <div id="header">
 	<div id="logo">
-		<h1><a href="#">Transition</a></h1>
-		<h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>
+		<h1><a href="#">Cook at your Home !</a></h1>
 	</div>
 	<div id="topmenu">
 		<ul>
-			<li class="first"><a href="#">Homepage</a></li>
+			<li class="first"><a href="index.php">Homepage</a></li>
+			<?php
+				if($_SESSION['login'] == NULL)
+				{
+					?>
+					<li><a href="register.php">Register</a></li>
+		<?
+				}
+
+			?>
 			<li><a href="#">Contact</a></li>
 			<li><a href="#">Sitemap</a></li>
 		</ul>
