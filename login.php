@@ -35,7 +35,7 @@ if(isset($_POST['submit_login']))
 				</form>
 				<a href="#">Forgot password?</a>
 		</div>
-		* just click "login" is ok for test
+		* admin : 123456
 	</div>
 
 
