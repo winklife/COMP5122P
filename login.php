@@ -1,9 +1,17 @@
 <?php
 if(isset($_POST['submit_login']))
 	{
-		session_start();
-		$_SESSION['login'] = true;
-		header("Location: index.php");
+		include_once("config.php");
+		
+		$check = $User->CheckLogin($_POST['login_id'] , $_POST['login_password']);
+		if($check === true)
+		{
+			$_SESSION['login'] = true;
+			$_SESSION['username'] = $_POST['login_id'];
+			header("Location: index.php");
+		}
+		
+		
 	}
 
 	include_once("header.php");

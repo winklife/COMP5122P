@@ -48,7 +48,7 @@ Description: A two-column, fixed-width template with light color blend.
 				else
 				{
 					?>
-					<li><a href="account.php">My Info</a></li>
+					<li><a href="account.php"><strong>[<?=$_SESSION['username']?>]</strong> Info</a></li>
 					<li><a href="logout.php">Logout</a></li>
 					<?
 				}
