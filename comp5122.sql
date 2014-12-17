@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 -- 
 -- 主機: localhost
--- 建立日期: Dec 17, 2014, 09:25 AM
+-- 建立日期: Dec 17, 2014, 11:19 AM
 -- 伺服器版本: 5.0.51
 -- PHP 版本: 5.2.6
 
@@ -42,9 +42,9 @@ CREATE TABLE `announce` (
 
 DROP TABLE IF EXISTS `arena`;
 CREATE TABLE `arena` (
-  `Arena_id` int(10) unsigned NOT NULL auto_increment,
+  `ID` int(10) unsigned NOT NULL auto_increment,
   `Description` varchar(255) default NULL,
-  PRIMARY KEY  (`Arena_id`)
+  PRIMARY KEY  (`ID`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 -- 
@@ -65,7 +65,7 @@ INSERT INTO `arena` VALUES (4, 'Business Dining');
 DROP TABLE IF EXISTS `cook_skill`;
 CREATE TABLE `cook_skill` (
   `ID` int(10) unsigned NOT NULL auto_increment,
-  `description` varchar(255) default NULL,
+  `Description` varchar(255) default NULL,
   PRIMARY KEY  (`ID`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
@@ -87,9 +87,9 @@ INSERT INTO `cook_skill` VALUES (5, 'Dessert');
 
 DROP TABLE IF EXISTS `cuisine`;
 CREATE TABLE `cuisine` (
-  `Cuisine_id` int(200) NOT NULL auto_increment,
-  `Description` char(255) default NULL,
-  PRIMARY KEY  (`Cuisine_id`)
+  `ID` int(10) unsigned NOT NULL auto_increment,
+  `Description` varchar(255) default NULL,
+  PRIMARY KEY  (`ID`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 -- 
@@ -158,6 +158,8 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `Userid` int(10) unsigned NOT NULL auto_increment,
   `User_name` varchar(200) NOT NULL,
+  `first_name` varchar(200) default NULL,
+  `last_name` varchar(200) default NULL,
   `Password` varchar(200) NOT NULL,
   `Reg_date` datetime NOT NULL,
   `isAdmin` tinyint(1) default '0' COMMENT '1 is admin',
@@ -168,13 +170,14 @@ CREATE TABLE `user` (
   `status` tinyint(1) default '1',
   `last_login_date` datetime default NULL,
   PRIMARY KEY  (`Userid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 -- 
 -- 列出以下資料庫的數據： `user`
 -- 
 
-INSERT INTO `user` VALUES (1, '', 'admin', '0000-00-00 00:00:00', 0, NULL, NULL, NULL, 'M', 1, NULL);
+INSERT INTO `user` VALUES (1, 'admin', NULL, NULL, '123456', '0000-00-00 00:00:00', 1, NULL, NULL, NULL, 'M', 1, NULL);
+INSERT INTO `user` VALUES (2, 'aaa', 'asdsd', 'xccxc', '123456', '0000-00-00 00:00:00', 0, NULL, NULL, NULL, 'M', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -256,12 +259,15 @@ CREATE TABLE `user_skillset` (
   `others` varchar(255) default NULL,
   `status` tinyint(1) default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 -- 
 -- 列出以下資料庫的數據： `user_skillset`
 -- 
 
+INSERT INTO `user_skillset` VALUES (1, 2, 1, 1, NULL, 1);
+INSERT INTO `user_skillset` VALUES (2, 2, 3, 2, NULL, 1);
+INSERT INTO `user_skillset` VALUES (3, 2, 99, 1, 'AADDD', 1);
 
 -- --------------------------------------------------------
 

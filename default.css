@@ -355,3 +355,7 @@ hr {
 	float: right;
 	padding: 10px 0 0 0;
 }
+
+table#vtop td{
+vertical-align:top;
+}

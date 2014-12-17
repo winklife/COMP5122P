@@ -46,9 +46,19 @@ Description: A two-column, fixed-width template with light color blend.
 		<?
 				}
 				else
-				{
+				{				
+					if($_SESSION['isAdmin'] == 1)
+					{
 					?>
-					<li><a href="account.php"><strong>[<?=$_SESSION['username']?>]</strong> Info</a></li>
+					<li><a href="admin.php"><strong>Control Panel</strong></a></li>
+					<?
+					}
+					else
+					{
+						?>
+						<li><a href="account.php"><strong>[<?=$_SESSION['username']?>]</strong> Info</a></li>
+				<?	}
+					?>
 					<li><a href="logout.php">Logout</a></li>
 					<?
 				}
@@ -82,3 +92,7 @@ if( $_SESSION['login'] != NULL)
 	<div id="splash"><a href="#"><img src="images/img04.jpg" alt="" width="560" height="200" /></a></div>
 </div>
 <hr />
+<?php
+print_r($_SESSION);
+
+?>

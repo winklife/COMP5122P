@@ -4,10 +4,13 @@ if(isset($_POST['submit_login']))
 		include_once("config.php");
 		
 		$check = $User->CheckLogin($_POST['login_id'] , $_POST['login_password']);
-		if($check === true)
+		if(is_array($check))
 		{
+			$_SESSION = $check;
 			$_SESSION['login'] = true;
+			$_SESSION['Userid'] = $_POST['Userid'];
 			$_SESSION['username'] = $_POST['login_id'];
+
 			header("Location: index.php");
 		}
 		
