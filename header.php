@@ -80,7 +80,7 @@ if( $_SESSION['login'] != NULL)
 ?>
 			<li class="first"><a href="findchef.php">I Need Chef</a></li>
 			<li><a href="leaderboard.php">Leaderboard</a></li>
-			<li><a href="#">Support</a></li>
+			<li><a href="news.php">News</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Contact</a></li>
 			<?
@@ -92,7 +92,3 @@ if( $_SESSION['login'] != NULL)
 	<div id="splash"><a href="#"><img src="images/img04.jpg" alt="" width="560" height="200" /></a></div>
 </div>
 <hr />
-<?php
-print_r($_SESSION);
-
-?>

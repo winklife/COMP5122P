@@ -8,7 +8,7 @@ if(isset($_POST['submit_login']))
 		{
 			$_SESSION = $check;
 			$_SESSION['login'] = true;
-			$_SESSION['Userid'] = $_POST['Userid'];
+			
 			$_SESSION['username'] = $_POST['login_id'];
 
 			header("Location: index.php");

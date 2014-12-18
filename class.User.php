@@ -67,5 +67,45 @@ class User
 	return $data;
 	}//end get Data
 
+	function updateUser($id, $type, $value)
+	{
+		$array=array(":id"=>$id, ":type"=>$type, ":value"=>$value);
+		#print_r($array);
+		$sql= "update `user` set ".$type." = ? where Userid = ?";
+		$query= $this->connect->prepare($sql);
+		try{
+		$query->execute(array($value, $id));
+		}
+		catch (PDOException  $e)
+	{	
+		exit("Database error " .$e->getMessage());
+	}
+		}//end function
+
+		function updateSkills($id, $type,$update, $other)
+	{
+		$sql="delete from `user_skillset` where UserID = ".$id ." and categoryID = ".$type;
+		$sql2 = $this->connect->prepare($sql);
+		$sql2->execute();
+
+		$run = "insert into `user_skillset` (ID, UserID, SkillID, categoryID, status) values (NULL, :id, :skill, :cate, 1)";
+		$query = $this->connect->prepare($run);
+		
+		if($update != NULL)
+		{
+		foreach ($update as $key=>$value)
+		{
+			$query->bindparam(":id", $id);
+			$query->bindparam(":skill", $key);
+			$query->bindparam(":cate", $type);
+			$query->execute();
+		}
+		}
+		if($other != '')
+		$sql = "insert into `user_skillset` (ID, UserID, SkillID, categoryID, others, status) values (NULL, ".$id.", 99, ".$type.", '".$other."', 1)";
+		$query= $this->connect->prepare($sql);
+		$query->execute();
+	}//end function
+
 }//end class
 ?>

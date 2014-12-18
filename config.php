@@ -10,14 +10,15 @@
 
 	try{
 	$connect = new PDO("mysql:host=localhost;dbname=comp5122;charset=utf8;","comp5122","comp5122");
-#	$connect = new mysqli("localhost", "comp5122", "comp5122", "comp5122");
+
 	}
-	catch (Exception $e)
+	catch (PDOException  $e)
 	{
-		exit("Database error");
+	
+		exit("Database error " .$e->getMessage());
 	}
 
-	include_once("class.user.php");
+	include_once("class.User.php");
 	$User = new User();
 	$User->setConnect($connect);
 
