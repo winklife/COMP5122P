@@ -33,16 +33,6 @@ class User
 		return $this->connect->lastInsertId();
 	}//end Register
 
-	function getCuisine($id)
-	{
-
-	}
-
-	function getCookSkill($id)
-	{
-
-	}
-
 	function getUserData($id)
 	{
 		$temp = array(1=>'cuisine', 2=>'cookskill', 3=>'arena');

@@ -79,10 +79,11 @@ if( $_SESSION['login'] != NULL)
 {
 ?>
 			<li class="first"><a href="findchef.php">I Need Chef</a></li>
+			<li><a href="postchef.php">I am Chef</a></li>
 			<li><a href="leaderboard.php">Leaderboard</a></li>
 			<li><a href="news.php">News</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
+
+			
 			<?
 }
 ?>

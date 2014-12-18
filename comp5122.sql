@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 -- 
 -- 主機: localhost
--- 建立日期: Dec 17, 2014, 11:19 AM
+-- 建立日期: Dec 18, 2014, 01:21 PM
 -- 伺服器版本: 5.0.51
 -- PHP 版本: 5.2.6
 
@@ -177,7 +177,7 @@ CREATE TABLE `user` (
 -- 
 
 INSERT INTO `user` VALUES (1, 'admin', NULL, NULL, '123456', '0000-00-00 00:00:00', 1, NULL, NULL, NULL, 'M', 1, NULL);
-INSERT INTO `user` VALUES (2, 'aaa', 'asdsd', 'xccxc', '123456', '0000-00-00 00:00:00', 0, NULL, NULL, NULL, 'M', 1, NULL);
+INSERT INTO `user` VALUES (2, 'aaa', 'asdsd', 'xccxc', '123', '0000-00-00 00:00:00', 0, '123', '123', 123, 'F', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -235,14 +235,17 @@ CREATE TABLE `user_request_chef_post` (
   `description` text,
   `available_time` varchar(255) default NULL COMMENT 'array of week',
   `date` datetime default NULL,
-  `status` tinyint(1) default '1' COMMENT '1=waiting, 2=ccepted, 3=finish, 4=cancel',
+  `status` tinyint(1) default '0' COMMENT '1=waiting, 2=ccepted, 3=finish, 4=cancel, 5=active, 0=deatvie',
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 -- 
 -- 列出以下資料庫的數據： `user_request_chef_post`
 -- 
 
+INSERT INTO `user_request_chef_post` VALUES (1, 2, 1, 'aa', 'ss', NULL, '2014-12-18 20:39:30', 1);
+INSERT INTO `user_request_chef_post` VALUES (2, 2, 1, 'aaa', 'ssss', NULL, '2014-12-18 20:44:24', 1);
+INSERT INTO `user_request_chef_post` VALUES (3, 2, 1, 'cc', 'xxxx', NULL, '2014-12-18 20:44:41', 1);
 
 -- --------------------------------------------------------
 
@@ -259,15 +262,18 @@ CREATE TABLE `user_skillset` (
   `others` varchar(255) default NULL,
   `status` tinyint(1) default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=122 ;
 
 -- 
 -- 列出以下資料庫的數據： `user_skillset`
 -- 
 
-INSERT INTO `user_skillset` VALUES (1, 2, 1, 1, NULL, 1);
-INSERT INTO `user_skillset` VALUES (2, 2, 3, 2, NULL, 1);
-INSERT INTO `user_skillset` VALUES (3, 2, 99, 1, 'AADDD', 1);
+INSERT INTO `user_skillset` VALUES (118, 2, 99, 1, 'zz', 1);
+INSERT INTO `user_skillset` VALUES (117, 2, 6, 1, NULL, 1);
+INSERT INTO `user_skillset` VALUES (116, 2, 5, 1, NULL, 1);
+INSERT INTO `user_skillset` VALUES (121, 2, 99, 3, 'ddd', 1);
+INSERT INTO `user_skillset` VALUES (120, 2, 3, 3, NULL, 1);
+INSERT INTO `user_skillset` VALUES (119, 2, 5, 3, NULL, 1);
 
 -- --------------------------------------------------------
 

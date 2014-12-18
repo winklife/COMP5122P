@@ -1,4 +1,12 @@
 <?php
+
+	include_once("config.php");
+
+	
+	
+
+
+
 	include_once("header.php");
 
 ?>
@@ -7,75 +15,58 @@
 		<div>
 			<h1 class="title">I Need Chef</h1>
 			<div class="content">
-				<p><img src="images/x.jpg" alt="" width="118" height="118" class="left" /></p>
-				<p><strong>Transition</strong> is a free template from <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> released under a <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5 License</a>. The  photo is from <a href="http://www.pdphoto.org/">PDPhoto.org</a>. You"re free to use it for both commercial or personal use. I only ask that you link back to <a href="http://www.freecsstemplates.org/">my site</a> in some way. <em>Enjoy :)</em></p>
-				<h2>Praesent Scelerisque</h2>
-				<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat:</p>
-				<blockquote>
-					<p>&ldquo;Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo. Pellentesque imperdiet.&rdquo;</p>
-				</blockquote>
+			<h2 class="">Search:</h2>
+			<form action="findchef_result.php" method="get" target="_blank">
+			<table id="vtop">
+			<tr><td>Cuisine<td>
+			<?php	
+			$sql="select * from cuisine order by ID asc";
+		$query = $connect->prepare($sql);
+		$query->execute();
+		while($result = $query->fetch())
+		{
+			echo "<input type=checkbox name='cuisine[".$result['ID']."]'>". $result['Description']."<BR>";
+		}
+	echo "<tr><td>Cook Skill<td>";
+$sql="select * from cook_skill order by ID asc";
+		$query = $connect->prepare($sql);
+		$query->execute();
+		while($result = $query->fetch())
+	{			
+			echo "<input type=checkbox name='cookskill[".$result['ID']."]'>".$result['Description']."<BR>";			
+		
+		}
+echo "<tr><td>Arena<td>";
+	$sql="select * from arena order by ID asc";
+		$query = $connect->prepare($sql);
+		$query->execute();
+		while($result = $query->fetch())
+		{
+			echo "<input type=checkbox name='arena[".$result['ID']."]'>". $result['Description']."<BR>"; 			
+
+		}
+			?>
+<tr><td>Table number:<td>
+<input type="radio" name="table_number" value=1>1-2
+<input type="radio" name="table_number" value=2>3-4
+<input type="radio" name="table_number" value=3>5-10
+<input type="radio" name="table_number" value=4> > 10
+
+<tr><td>Available time: <td>
+<input type="checkbox" name="available_time[1]" checked>Monday
+<input type="checkbox" name="available_time[2]" checked>Tuesday
+<input type="checkbox" name="available_time[3]" checked>Wednesday
+<input type="checkbox" name="available_time[4]" checked>Thursday
+<input type="checkbox" name="available_time[5]" checked>Friday
+<input type="checkbox" name="available_time[6]" checked>Saturday
+<input type="checkbox" name="available_time[7]" checked>Sunday
+<tr><td colspan=2><input type="submit" name="submit" value="Search">
+
+</table>
+			</form>				
 			</div>
 		</div>
-		<div class="twocols">
-			<div class="col1">
-				<h2 class="title">Lorem Ipsum Dolor</h2>
-				<div class="content">
-					<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Quisque dictum integer nisl risus, sagittis convallis.</p>
-					<p><a href="#">Read more&hellip;</a></p>
-				</div>
-			</div>
-			<div class="col2">
-				<h2 class="title">Pellentesque Quis</h2>
-				<div class="content">
-					<ul class="list">
-						<li><a href="#">Ut semper vestibulum est</a></li>
-						<li><a href="#">Vestibulum luctus  dui</a></li>
-						<li><a href="#">Integer rutrum nisl in mi</a></li>
-						<li><a href="#">Etiam malesuada rutrum </a></li>
-						<li><a href="#">Aenean elementum  ligula</a></li>
-						<li><a href="#">Ut tincidunt elit vitae augue</a></li>
-						<li><a href="#">Sed quis odio sagittis leo </a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="sidebar">
-		<ul>
-			<li>
-				<h2>Recent Updates</h2>
-				<ul>
-					<li class="first">
-						<h3><span>6/25:</span> Semper vestibulum</h3>
-						<p><a href="#">In posuere eleifend odio quisque semper augue mattis wisi maecenas ligula&hellip;</a></p>
-					</li>
-					<li>
-						<h3><span>6/21:</span> Posuere eleifend odio</h3>
-						<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum&hellip;</a></p>
-					</li>
-					<li>
-						<h3><span>6/17:</span> Vivamus fermentum</h3>
-						<p><a href="#">Quisque dictum integer nisl risus, sagittis convallis, rutrum id, congue, and nibh&hellip;</a></p>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<h2>Sagittis Convallis</h2>
-				<ul>
-					<li class="first"><a href="#">Ut semper vestibulum est</a></li>
-					<li><a href="#">Vestibulum luctus venenatis </a></li>
-					<li><a href="#">Integer rutrum nisl in mi</a></li>
-					<li><a href="#">Etiam malesuada rutrum enim</a></li>
-					<li><a href="#">Aenean elementum facilisis </a></li>
-					<li><a href="#">Ut tincidunt elit vitae augue</a></li>
-					<li><a href="#">Sed quis odio sagittis leo </a></li>
-					<li><a href="#">Integer rutrum nisl in mi</a></li>
-					<li><a href="#">Etiam malesuada rutrum enim</a></li>
-					<li><a href="#">Aenean elementum facilisis </a></li>
-					<li><a href="#">Ut tincidunt elit vitae augue</a></li>
-				</ul>
-			</li>
-		</ul>
+		
 	</div>
 	<div style="clear: both;">&nbsp;</div>
 </div>
