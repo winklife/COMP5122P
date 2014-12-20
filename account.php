@@ -33,10 +33,53 @@
 	#print_r($user_data);
 ?>
 <div id="page">
-	<div id="content">
+<script>
+$(document).ready(function() {
+	$("#cook-tabs").tabs();
+	$("a#rejectcall").click(function()
+	{
+		$("div#no").dialog({
+      resizable: false,
+      height:140,
+      modal: true,
+      buttons: {
+        "Yes": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
 		<div>
 			<h1 class="title">My Information</h1>
 			<div class="content">
+<div id="cook-tabs">
+	<ul><li> <a href="#info">Basic info</a></li>
+	<li><a href="#Appointment">Appointment</a></li>
+	<li><a href="#transaction">Transaction</a></li>
+	</ul>
+<div id="no" style="display:none;">Are you sure to reject?</div>
+<div id="info">
 			<form action="account.php" method="post">
 			<table id="vtop">
 
@@ -105,7 +148,26 @@
 
 			</table>
 			</form>				
-			</div>
+	</div>
+<div id="Appointment">
+	<table class="cooktable">
+	<tr><td>Date<td>User Name<td>Fee<td>Status
+	<tr><td>2014-12-23<td><a href="transdetail.htm" class="various fancybox.ajax">Apple from the tree</a><td>$2,200<td>Waiting (<a href="#" id="rejectcall">reject?</a>)
+	<tr><td>2014-12-02<td>Orange from the land<td>$1,000<td>Reject
+	<tr><td>2014-11-11<td>King for here<td>$990<td>Done
+	<tr><td>2014-11-10<td>Queen<td>$100<td>Cancel
+	</table>
+</div>
+<div id="transaction">
+	<table class="cooktable2">
+<tr><td>Transaction Date<td>User<td>Amount<td>Status
+<tr><td>2014-12-02<td>Orange from the land<td>$1,000<td>Reject
+<tr><td>2014-11-11<td>King for here<td>$990<td>Done
+	<tr><td>2014-11-10<td>Queen<td>$100<td>Cancel
+	</table>
+</div>
+
+	</div><!--end tab-->
 		</div>
 	
 	</div>
